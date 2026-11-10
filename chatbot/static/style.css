@@ -1,0 +1,64 @@
+/* A.Z Tech Solutions - Style */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F7FA;
+    color: #0F2A44;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #0F2A44;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00BFA6;
+}
+
+h1 {
+    color: #0F2A44;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #0F2A44;
+    border-bottom: 3px solid #00BFA6;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #0F2A44;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: #00BFA6;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #FF8A00;
+}
+
+ul {
+    background: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    border-left: 4px solid #00BFA6;
+}
