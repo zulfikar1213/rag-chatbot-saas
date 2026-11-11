@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .groq_client import ask_groq
 
 def home(request):
     return render(request, 'chatbot/home.html')
@@ -7,7 +8,16 @@ def about(request):
     return render(request, 'chatbot/about.html') 
 
 def rag_chatbot(request):
-    return render(request, 'chatbot/rag_chatbot.html')
+    answer = None
+    question = None
+    if request.method == "POST":
+        question = request.POST.get("question")
+        if question:
+            answer = ask_groq(question)
+    return render(request, 'chatbot/rag_chatbot.html', {
+        'question': question,
+        'answer': answer,
+    })
 
 def agent(request):
     return render(request, 'chatbot/agent.html')

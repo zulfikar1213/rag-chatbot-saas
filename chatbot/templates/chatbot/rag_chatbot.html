@@ -3,8 +3,21 @@
 {% block title %}RAG Chatbot - A.Z Tech Solutions{% endblock %}
 
 {% block content %}
-<h1>RAG Chatbot</h1>
-<p>A chatbot that answers from your own PDF, not from its head. Works 24/7 on WhatsApp.</p>
-<p>Starter: 150$ in Qatar / 75$ in Iraq</p>
+<h1>RAG Chatbot - Test Iraqi Brain</h1>
+<p>Ask in Iraqi dialect!</p>
+
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="question" placeholder="اكتب سؤالك... عندكم برياني؟" style="width: 300px; padding: 8px;" required>
+    <button type="submit">Send</button>
+</form>
+
+{% if question %}
+<hr>
+<p><b>You:</b> {{ question }}</p>
+<p><b>Bot:</b> {{ answer }}</p>
+{% endif %}
+
+<br>
 <a href="/">Back to Home</a>
 {% endblock %}
