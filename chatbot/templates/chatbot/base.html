@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}A.Z Tech Solutions{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/about/">About</a> |
+        <a href="/services/rag-chatbot/">RAG Chatbot</a> |
+        <a href="/services/agent/">Agent</a> |
+        <a href="/services/pdf-generator/">PDF Generator</a> |
+        <a href="/services/whatsapp-booking/">WhatsApp Booking</a>
+    </nav>
+    <hr>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <hr>
+    <footer>
+        <p>© 2026 A.Z Tech Solutions - Built for Iraq & Qatar</p>
+    </footer>
+
+</body>
+</html>

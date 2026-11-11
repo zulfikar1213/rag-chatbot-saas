@@ -1,39 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - A.Z Tech Solutions</title>
-</head>
-<body>
-    <h1>About A.Z Tech Solutions</h1>
+{% extends 'chatbot/base.html' %}
 
-    <p>We build AI tools for restaurants, clinics, hotels and shops in Iraq and Qatar.</p>
+{% block title %}About - A.Z Tech Solutions{% endblock %}
 
-    <h2>What we do</h2>
+{% block content %}
 
-    <h3>1. RAG Chatbot</h3>
-    <p>A chatbot that answers from your own PDF, not from its head. It works 24/7 on WhatsApp. If it does not know, it says: I don't know.</p>
-    <p><strong>Price:</strong> Starter $150 in Qatar / $75 in Iraq</p>
+<h1>About A.Z Tech Solutions</h1>
 
-    <h3>2. Lead Qualification Agent</h3>
-    <p>An Agent that talks to the client, collects info during the chat, and if it understands the client needs RAG, it moves him to PDF Generation.</p>
-    <p><strong>Status:</strong> Coming Soon</p>
+<p>We build AI systems for small businesses in Qatar and Iraq.</p>
 
-    <h3>3. PDF Quote Generator</h3>
-    <p>Client answers 20 easy questions, and we generate a PDF with a quote in 1 minute.</p>
-    <p><strong>Status:</strong> Coming Soon</p>
+<h2>Our Services</h2>
+<ul>
+    <li>RAG Chatbot - Answers from your own PDF</li>
+    <li>Lead Qualification Agent - Collects client info</li>
+    <li>PDF Quote Generator - Quote in 1 minute</li>
+    <li>WhatsApp Booking - Confirm bookings, reduce No-Shows</li>
+</ul>
 
-    <h3>4. WhatsApp Booking</h3>
-    <p>WhatsApp Bot that confirms bookings and sends reminders. It reduces No-Shows by 30%.</p>
-    <p><strong>Status:</strong> Coming Soon</p>
+<p>Starter: 150$ in Qatar / 75$ in Iraq</p>
 
-    <h3>5. Missed Call Back</h3>
-    <p>If someone calls and we miss it, the Bot sends him WhatsApp: I saw you called, what do you need?</p>
-    <p><strong>Status:</strong> Coming Soon</p>
+<a href="/">Back to Home</a>
 
-    <br><br>
-    <a href="/">Back to Home</a>
-
-</body>
-</html>
+{% endblock %}

@@ -1,50 +1,33 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.Z Tech Solutions</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
+{% extends 'chatbot/base.html' %}
 
-    <!-- NAVIGATION - Links to all pages! -->
-    <nav>
-        <a href="/">Home</a> |
-        <a href="/about/">About</a> |
-        <a href="/services/rag-chatbot/">RAG Chatbot</a> |
-        <a href="/services/agent/">Agent</a> |
-        <a href="/services/pdf-generator/">PDF Generator</a> |
-        <a href="/services/whatsapp-booking/">WhatsApp Booking</a>
-    </nav>
-    <hr>
+{% block title %}A.Z Tech Solutions{% endblock %}
 
-    <h1>A.Z Tech Solutions - RAG Chatbot SaaS</h1>
+{% block content %}
 
-    <p>We build AI chatbots for restaurants, clinics and hotels in Qatar and Iraq.</p>
-    <p>Starter: 150$ in Qatar / 75$ in Iraq</p>
+<h1>A.Z Tech Solutions - RAG Chatbot SaaS</h1>
 
-    <h2>Our Services</h2>
+<p>We build AI chatbots for restaurants, clinics and hotels in Qatar and Iraq.</p>
+<p>Starter: 150$ in Qatar / 75$ in Iraq</p>
 
-    <h3>1. RAG Chatbot</h3>
-    <p>A chatbot that answers from your own PDF, not from its head. Works 24/7 on WhatsApp.</p>
-    <a href="/services/rag-chatbot/">Learn more about RAG Chatbot</a>
+<h2>Our Services</h2>
 
-    <h3>2. Lead Qualification Agent</h3>
-    <p>An Agent that talks to the client, collects info during the chat, and moves him to PDF Generation.</p>
-    <a href="/services/agent/">Learn more about Agent</a>
+<h3>1. RAG Chatbot</h3>
+<p>A chatbot that answers from your own PDF, not from its head. Works 24/7 on WhatsApp.</p>
+<a href="/services/rag-chatbot/">Learn more about RAG Chatbot</a>
 
-    <h3>3. PDF Quote Generator</h3>
-    <p>Client answers 20 easy questions, and we generate a PDF with a quote in 1 minute.</p>
-    <a href="/services/pdf-generator/">Learn more about PDF Generator</a>
+<h3>2. Lead Qualification Agent</h3>
+<p>An Agent that talks to the client, collects info during the chat, and moves him to PDF Generation.</p>
+<a href="/services/agent/">Learn more about Agent</a>
 
-    <h3>4. WhatsApp Booking</h3>
-    <p>WhatsApp Bot that confirms bookings and sends reminders. Reduces No-Shows by 30%.</p>
-    <a href="/services/whatsapp-booking/">Learn more about WhatsApp Booking</a>
+<h3>3. PDF Quote Generator</h3>
+<p>Client answers 20 easy questions, and we generate a PDF with a quote in 1 minute.</p>
+<a href="/services/pdf-generator/">Learn more about PDF Generator</a>
 
-    <br><br>
-    <a href="/about/">About Us - All Services</a>
+<h3>4. WhatsApp Booking</h3>
+<p>WhatsApp Bot that confirms bookings and sends reminders. Reduces No-Shows by 30%.</p>
+<a href="/services/whatsapp-booking/">Learn more about WhatsApp Booking</a>
 
-</body>
-</html>
+<br><br>
+<a href="/about/">About Us - All Services</a>
+
+{% endblock %}

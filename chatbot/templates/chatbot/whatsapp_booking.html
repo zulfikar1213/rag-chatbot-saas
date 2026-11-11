@@ -1,57 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【entity-WhatsApp¦canonical_name=WhatsApp】 Booking - A.Z Tech Solutions</title>
-</head>
-<body>
+{% extends 'chatbot/base.html' %}
 
-    <nav>
-        <a href="/">Home</a> |
-        <a href="/about/">About</a> |
-        <a href="/services/rag-chatbot/">RAG Chatbot</a> |
-        <a href="/services/agent/">Agent</a> |
-        <a href="/services/pdf-generator/">PDF Generator</a> |
-        <a href="/services/whatsapp-booking/">WhatsApp Booking</a>
-    </nav>
-    <hr>
+{% block title %}WhatsApp Booking - A.Z Tech Solutions{% endblock %}
 
-    <h1>WhatsApp Booking + No-Show Reducer</h1>
-    <p>【entity-WhatsApp¦canonical_name=WhatsApp】 Bot that confirms bookings and sends reminders. It reduces No-Shows by 30%.</p>
-
-    <h2>The Problem</h2>
-    <p>30% of bookings don't come! No-Show!</p>
-    <p>Hotel has 10 rooms booked, 3 don't come. Clinic has 20 patients booked, 6 don't come. You lose money.</p>
-    <p>Why? Because you don't remind them. You are busy.</p>
-
-    <h2>How It Works</h2>
-    <h3>Step 1: Client books on WhatsApp</h3>
-    <p>Client says: I want to book for 2 people, tomorrow at 7pm. Bot saves it.</p>
-
-    <h3>Step 2: Bot confirms</h3>
-    <p>Bot says: Your booking is confirmed for tomorrow at 7pm. See you!</p>
-
-    <h3>Step 3: Bot reminds</h3>
-    <p>Bot sends reminder 1 day before: Tomorrow at 7pm, are you still coming?</p>
-    <p>Bot sends reminder 1 hour before: See you in 1 hour!</p>
-
-    <h2>Missed Call Back - Bonus!</h2>
-    <p>If someone calls and you miss it, Bot sends him WhatsApp directly:</p>
-    <p><strong>"I saw you called, what do you need?"</strong></p>
-    <p>Every missed call is a lost customer. Now you don't lose them!</p>
-
-    <h2>How Much Do You Save?</h2>
-    <p>Every booking that doesn't come, costs you $50 - $100.</p>
-    <p>If you save 10 bookings per month, you save $500 - $1000.</p>
-    <p>Bot costs $150. You win!</p>
-
-    <h2>Price</h2>
-    <p><strong>Growth:</strong> $350 / month - 【entity-WhatsApp¦canonical_name=WhatsApp】 + Instagram + Dashboard</p>
-    <p><strong>Premium:</strong> $600 / month - Everything + Voice + Reports</p>
-
-    <br>
-    <a href="/">Back to Home</a>
-
-</body>
-</html>
+{% block content %}
+<h1>WhatsApp Booking</h1>
+<p>WhatsApp Bot that confirms bookings and sends reminders. Reduces No-Shows by 30%.</p>
+<a href="/">Back to Home</a>
+{% endblock %}
